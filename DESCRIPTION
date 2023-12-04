@@ -5,7 +5,10 @@ Version: 0.1.0
 Author: Anastasia Teterina
 Maintainer: Anastasia Teterina <a.teterina@mail.utoronto.ca>
 Description: Functions to describe, visualize and analyse longitudinal 
-    next generation sequencing data
+    next generation sequencing data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.3
