@@ -21,7 +21,9 @@
 #' data(ngs_dat)
 #' counts.dat <- ngs_dat$counts
 #' metadat <- ngs_dat$metadat
-#' corr_longiNGS(counts.dat, metadat, "ID_sample", "ID_Number", "Day_Number", "g_Bacteroides")[1:6, 1:6]
+#' corr_longiNGS(counts.dat, metadat,
+#'               "ID_sample", "ID_Number", "Day_Number",
+#'               "g_Bacteroides")[1:6, 1:6]
 corr_longiNGS <- function(taxa.dat, metadat,
                          sample.id, subj.id, time.var, taxon.name){
     new.dat <- data.frame(taxa.dat[grepl(taxon.name, rownames(taxa.dat))])

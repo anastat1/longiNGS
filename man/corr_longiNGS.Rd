@@ -33,5 +33,7 @@ complete observations
 data(ngs_dat)
 counts.dat <- ngs_dat$counts
 metadat <- ngs_dat$metadat
-corr_longiNGS(counts.dat, metadat, "ID_sample", "ID_Number", "Day_Number", "g_Bacteroides")[1:6, 1:6]
+corr_longiNGS(counts.dat, metadat,
+              "ID_sample", "ID_Number", "Day_Number",
+              "g_Bacteroides")[1:6, 1:6]
 }

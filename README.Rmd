@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# longiNGS
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The package is intended to provide functionalities to work with longitudinal next generation sequencing data (e.g. RNAseq, 16S sequencing, microbial metagenome)
+
+## Installation
+
+You can install the development version of longiNGS from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("anastat1/longiNGS")
+```
+
+## Example
+
+Example functionality: description of longitudinal dataset
+
+```{r example}
+library(longiNGS)
+example.dat <- data.frame(ID = c("subj1", "subj1", "subj1", "subj2", "subj2", "subj3", "subj4"), 
+                          visit = c(1, 2, 3, 1, 2, 1, 1))
+example.dat
+count_rec_subj(example.dat, "ID", "visit")
+```
